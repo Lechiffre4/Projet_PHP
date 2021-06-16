@@ -62,3 +62,8 @@ body{
     border: solid#216869;
     border-radius: 20px;
 }
+
+.Title{
+    display:flex;
+    justify-content: center;
+}
