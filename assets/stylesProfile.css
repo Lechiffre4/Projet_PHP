@@ -1,0 +1,62 @@
+html{
+    background: #1F2421;
+}
+
+body{
+    background: #f1f1f1;
+    margin-left:5%;
+    margin-right: 5%;
+    padding-bottom: 15%;
+}
+
+#container{
+    width: 400px;
+    margin:0 auto;
+    margin-top:8%;
+   
+}
+
+.Username{
+    display: flex;
+    margin:0px;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.Pics{
+    display:flex;
+    width: 80%;
+    height:55%;
+    margin-left: 30px;
+    border-radius: 50%;
+    padding-top:50px;
+
+    align-content: center;
+    
+}
+
+.informations{
+    display: flex;
+    justify-content: center;
+}
+
+/* Set a style for all buttons */
+.button{
+    display: flex;
+    background-color: #216869;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    margin-left: 90px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    border-radius: 20px;
+    justify-content: center;
+}
+.button:hover {
+    background-color: #f1f1f1;
+    color: #53af57;
+    border: solid#216869;
+    border-radius: 20px;
+}
