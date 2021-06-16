@@ -3,7 +3,9 @@
     <head>
        <meta charset="utf-8">
         <!-- importer le fichier de style -->
-        <link rel="stylesheet" href="stylesProfile.css" media="screen" type="text/css" />
+        <style>
+            <?php include __DIR__ . '/assets/stylesPofile.css'; ?>
+        </style>
     </head>
     <body>
         <div id="container">

@@ -8,7 +8,7 @@ session_start();
 <?php
 try
 {
-    $bdd = new PDO('mysql:host=localhost;dbname=fakesteam;charset=utf8', 'root', '');
+    $bdd = new PDO('mysql:host=localhost;dbname=fakesteamdb;charset=utf8', 'root', '');
 }
 catch (Exception $e)
 {
@@ -21,7 +21,9 @@ catch (Exception $e)
     <head>
        <meta charset="utf-8">
         <!-- importer le fichier de style -->
-        <link rel="stylesheet" href="stylesLog.css" media="screen" type="text/css" />
+        <style>
+            <?php include __DIR__ . '/assets/stylesLog.css'; ?>
+        </style>
     </head>
     <body>
         <div id="container">

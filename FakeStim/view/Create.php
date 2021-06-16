@@ -20,13 +20,16 @@ catch (Exception $e)
     <head>
        <meta charset="utf-8">
         <!-- importer le fichier de style -->
-        <link rel="stylesheet" href="stylesCreate.css" media="screen" type="text/css" />
+        
+        <style>
+            <?php include __DIR__ . '/assets/stylesCreate.css'; ?>
+        </style>
     </head>
     <body>
         <div id="container">
             <!-- zone de connexion -->
             
-            <form action="/../model/ValidationInscription.php" method="post">
+            <form action="./ValidationInscription.php" method="post">
                 <h1>Create Account</h1>
                 
                 <label><b>Username</b></label>
@@ -47,3 +50,8 @@ catch (Exception $e)
         </div>
     </body>
 </html>
+
+
+
+
+
