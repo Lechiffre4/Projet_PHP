@@ -3,10 +3,7 @@
     <head>
        <meta charset="utf-8">
         <!-- importer le fichier de style -->
-        
-        <style>
-            <?php include __DIR__ . '/assets/stylesIndex.css'; ?>
-        </style>
+        <link rel="stylesheet" href="./assets/stylesIndex.css">
     </head>
     <body>
         <div id="container">

@@ -35,6 +35,9 @@ else {
             ':password' => password_hash($_POST['password'],PASSWORD_BCRYPT)
             )); //Envois du pseudo et mdp à la BDD
 
+            header('location:./index.php'); //Redirection vers le site
+            exit();
+
 }
 
      

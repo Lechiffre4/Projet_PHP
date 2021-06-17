@@ -24,18 +24,19 @@ $result = $reqValidation->fetch(PDO::FETCH_ASSOC); //Conversion du résultat en 
 if (password_verify($_POST['mdp'],$result['password'] )) //Vérification du hash
 {
 	
-
-    header('location:./Profil.php'); //Redirection vers le site
     
     $_SESSION['id'] = $result['userid'];
-    $_SESSION['pseudo'] = $result['pseudo'];
+    $_SESSION['pseudo'] = $result['username'];
+    $_SESSION['email'] = $result['email'];
     $_SESSION['password'] = $result['password'];
+    header('location:./Profil.php'); //Redirection vers le site
+    exit();
 
 } 
 
 else 
 {
-    echo "Pseudo ou mot de passe incorrecte";
+    echo "Pseudo ou mot de passe incorrect";
 }
 ?>
 

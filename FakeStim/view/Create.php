@@ -18,12 +18,9 @@ catch (Exception $e)
 
 <html>
     <head>
-       <meta charset="utf-8">
+        <meta charset="utf-8">
         <!-- importer le fichier de style -->
-        
-        <style>
-            <?php include __DIR__ . './assets/stylesCreate.css'; ?>
-        </style>
+        <link rel="stylesheet" href="./assets/stylesCreate.css">
     </head>
     <body>
         <div id="container">

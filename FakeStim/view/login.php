@@ -21,9 +21,7 @@ catch (Exception $e)
     <head>
        <meta charset="utf-8">
         <!-- importer le fichier de style -->
-        <style>
-            <?php include __DIR__ . './assets/stylesLog.css'; ?>
-        </style>
+        <link rel="stylesheet" href="./assets/stylesLog.css">
     </head>
     <body>
         <div id="container">
