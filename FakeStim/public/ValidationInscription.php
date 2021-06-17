@@ -17,10 +17,13 @@ $reqRec = $bdd->prepare('INSERT INTO profiles(username,email,password) VALUES (:
 $reqPseudo = $bdd->prepare('SELECT * FROM profiles WHERE username = :Username'); //Vérification du pseudo
 $reqEmail= $bdd->prepare('SELECT * FROM profiles WHERE email=:email');
 
+
 $reqPseudo->execute(array(':Username' => htmlspecialchars($_POST['pseudo'])));
 $reqEmail->execute(array(':email' => htmlspecialchars($_POST['email'])));
 
-if ($reqPseudo->rowCount() > 0) { //Vérification de l'existence du pseudo
+
+
+if ($reqPseudo->rowCount() > 0 || $reqEmail->rowCount()>0) { //Vérification de l'existence du pseudo
     echo "Pseudo ou Email déjà utilisé";
     $reqRec=$bdd->prepare('SELECT * FROM profiles');
 } 
