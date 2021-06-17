@@ -6,7 +6,7 @@ session_start();
 <?php
 try
 {
-    $bdd = new PDO('mysql:host=localhost;dbname=fakesteamdb charset=utf8', 'root', ''); //Connection à la BDD
+    $bdd = new PDO('mysql:host=localhost;dbname=fakesteamdb;charset=utf8', 'root', ''); //Connection à la BDD
 }
 catch (Exception $e)
 {
@@ -15,7 +15,7 @@ catch (Exception $e)
 
 $reqValidation = $bdd->prepare('SELECT * FROM profiles WHERE username = :pseudo'); //recuperation du champ correspondant au pseudo
 $reqValidation->execute(array(
-	'pseudo' => htmlspecialchars($_POST['pseudo'])
+	':pseudo' => htmlspecialchars($_POST['pseudo'])
 ));
 
 
@@ -25,7 +25,7 @@ if (password_verify($_POST['mdp'],$result['password'] )) //Vérification du hash
 {
 	
 
-    header('location:../site.php'); //Redirection vers le site
+    header('location:./Profil.php'); //Redirection vers le site
     
     $_SESSION['id'] = $result['userid'];
     $_SESSION['pseudo'] = $result['pseudo'];

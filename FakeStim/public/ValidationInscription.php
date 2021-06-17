@@ -36,11 +36,6 @@ else {
             )); //Envois du pseudo et mdp à la BDD
 
 }
-//TODO :
-//check le mdp x2;
-//faire le login et la session.
-//ajouter l'email;
-// 
 
      
 

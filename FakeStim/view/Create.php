@@ -22,7 +22,7 @@ catch (Exception $e)
         <!-- importer le fichier de style -->
         
         <style>
-            <?php include __DIR__ . '/assets/stylesCreate.css'; ?>
+            <?php include __DIR__ . './assets/stylesCreate.css'; ?>
         </style>
     </head>
     <body>

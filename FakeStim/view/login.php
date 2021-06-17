@@ -22,21 +22,21 @@ catch (Exception $e)
        <meta charset="utf-8">
         <!-- importer le fichier de style -->
         <style>
-            <?php include __DIR__ . '/assets/stylesLog.css'; ?>
+            <?php include __DIR__ . './assets/stylesLog.css'; ?>
         </style>
     </head>
     <body>
         <div id="container">
             <!-- zone de connexion -->
             
-            <form action="verification.php" method="POST">
+            <form action="./ValidationConnection.php" method="POST">
                 <h1>Connexion</h1>
                 
                 <label><b>Username</b></label>
-                <input type="text" placeholder="Entrer le nom d'utilisateur" name="username" required>
+                <input type="text" placeholder="Entrer le nom d'utilisateur" name="pseudo" required>
 
                 <label><b>Password</b></label>
-                <input type="password" placeholder="Entrer le mot de passe" name="password" required>
+                <input type="password" placeholder="Entrer le mot de passe" name="mdp" required>
 
                 <input type="submit" id='submit' value='LOGIN' >
                
