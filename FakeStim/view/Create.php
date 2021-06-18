@@ -38,10 +38,10 @@ catch (Exception $e)
                 <label><b>Password</b></label>
                 <input type="password" placeholder="Entrez votre mot de passe" name="password" required>
 
-                <label><b>Password</b></label>
+                <label><b>Repeat Password</b></label>
                 <input type="password" placeholder="Entrez de nouveau le mdp" name="passwordRepeat" required>
 
-                <input type="submit" id='submit' value='Create' >
+                <input type="submit" id='submit' value='CREATE' >
                
             </form>
         </div>

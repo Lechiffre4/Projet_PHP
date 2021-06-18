@@ -22,6 +22,10 @@ $reqPseudo->execute(array(':Username' => htmlspecialchars($_POST['pseudo'])));
 $reqEmail->execute(array(':email' => htmlspecialchars($_POST['email'])));
 
 
+$password = $_POST['password'];
+$passwordRedo = $_POST['passwordRepeat'] ;
+
+if ($password == $passwordRedo){
 
 if ($reqPseudo->rowCount() > 0 || $reqEmail->rowCount()>0) { //Vérification de l'existence du pseudo
     echo "Pseudo ou Email déjà utilisé";
@@ -40,5 +44,5 @@ else {
 
 }
 
-     
+} 
 

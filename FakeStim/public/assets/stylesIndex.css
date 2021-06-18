@@ -20,22 +20,11 @@ body{
 
 .Username{
     display: flex;
-    margin:0px;
-    margin-top: 50px;
+    
     justify-content: center;
 }
 
-.Pics{
-    display:flex;
-    width: 80%;
-    height:55%;
-    margin-left: 30px;
-    border-radius: 50%;
-    padding-top:50px;
 
-    align-content: center;
-    
-}
 
 .informations{
     display: flex;
@@ -47,10 +36,8 @@ body{
     display: flex;
     background-color: #216869;
     color: white;
-    padding: 15px ;
-    margin-left:70x;
-    margin: 8px 0;
-    margin-left: 90px;
+    padding: 15px ;  
+    margin-left: 100px;
     border: none;
     cursor: pointer;
     width: 50%;
@@ -67,5 +54,6 @@ body{
 
 .Title{
     display:flex;
+    
     justify-content: center;
 }
