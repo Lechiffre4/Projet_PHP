@@ -3,18 +3,7 @@
 session_start();
 ?>
 
-<!DOCTYPE HTML>
-
-<?php
-try
-{
-    $bdd = new PDO('mysql:host=localhost;dbname=fakesteamdb;charset=utf8', 'root', '');
-}
-catch (Exception $e)
-{
-        die('Erreur : ' . $e->getMessage());
-}
-?>
+require_once __DIR__ . '/../database/db.php';
 
 
 <html>
