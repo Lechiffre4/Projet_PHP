@@ -26,21 +26,17 @@ if (!isset($_SESSION['pseudo'])){
         <div id="container">
         
         <img class="Pics" src="./assets/Images/image0.png" alt="Pics">
-        <button class="button" href="/">Edit Pic</button>
+        <!-- <button class="button" href="/">Edit Pic</button> -->
         <h2 class="Username">Username</h2>
         <p class="informations"><?php echo $_SESSION['pseudo']; ?></p>
-        <button class="button" href="/">Edit Username</button>
-
         <h2 class="Username">E-mail :</h2>
         <p class="informations"><?php echo $_SESSION['email']; ?></p>
-        <button class="button" href="/">Edit Email</button>
+        <a href='./ChangeInfo.php' class="button" >Edit Informations</a>
 
         <h2 class="Username">Password:</h2>
         <p class="informations"><?php echo $_SESSION['password']; ?> </p>
 
-        <button class="button" href="/">Edit Password</button>
-
-        <button class="button" onclick="window.location.href='<?php session_unset(); session_destroy(); ?> '" > logout</button>
+        <a href='./disconnect.php' class="button">Disconnect</a>
         
              
             

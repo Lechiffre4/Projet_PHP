@@ -1,10 +1,3 @@
-<!-- http://www.codeurjava.com/2016/12/formulaire-de-login-avec-html-css-php-et-mysql.html-->
-<?php
-session_start();
-?>
-
-require_once __DIR__ . '/../database/db.php';
-
 
 <html>
     <head>

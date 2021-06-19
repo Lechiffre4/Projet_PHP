@@ -8,7 +8,7 @@ $pseudo = $_POST['pseudo'];
 $password = $_POST['mdp'];
 
 
-login($username,$password,$bdd);
-header('location:./Profil.php'); //Redirection vers le site
+login($pseudo,$password,$bdd);
+ 
 
 

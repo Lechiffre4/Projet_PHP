@@ -1,5 +1,7 @@
 <?php 
 
+session_start();
+
 function login($username,$password,$bdd){
 
     $reqValidation = $bdd->prepare('SELECT * FROM profiles WHERE username = :pseudo'); //recuperation du champ correspondant au pseudo
@@ -9,13 +11,17 @@ function login($username,$password,$bdd){
 
 
     $result = $reqValidation->fetch(PDO::FETCH_ASSOC); //Conversion du résultat en array
+    
 
-    if (password_verify($password,$result['password'] )) //Vérification du hash
+    if (password_verify($password,$result['password'])) //Vérification du hash
     {
-    $_SESSION['id'] = $result['userid'];
+    $_SESSION['id'] = $result['id'];
     $_SESSION['pseudo'] = $result['username'];
     $_SESSION['email'] = $result['email'];
-    $_SESSION['password'] = $result['password'];
+
+    
+   
+    header('location:./Profil.php');
     } 
 
     else 
@@ -23,3 +29,4 @@ function login($username,$password,$bdd){
     echo "Pseudo ou mot de passe incorrect";
     }
 }
+
