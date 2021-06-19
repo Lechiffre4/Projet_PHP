@@ -15,7 +15,7 @@ function changeinfo($bdd, $pseudo, $email,$id)
         $_SESSION['pseudo'] = $pseudo;
         $_SESSION['email'] = $email;
 
-        //header('location:./Profil.php');
+        header('location:./Profil.php');
         exit();
 }
 

@@ -10,7 +10,7 @@ require_once __DIR__ . '/../database/db.php';
 require_once __DIR__ . '/../model/CreateUser.php';
 
 CreateUser($pseudo,$email,$password,$passwordRedo,$bdd);
-header('location: ./index.php');
+
 
     
 

@@ -17,6 +17,8 @@ if ($password == $passwordRedo){
     if ($reqPseudo->rowCount() > 0 || $reqEmail->rowCount()>0) { //Vérification de l'existence du pseudo
         echo "Pseudo ou Email déjà utilisé";
         $reqRec=$bdd->prepare('SELECT * FROM profiles');
+        header('location:./Error/ErrorAlreadyUsed.php');
+
     } 
 
     else {
@@ -29,5 +31,7 @@ if ($password == $passwordRedo){
     }
 
 } 
-
+else{
+header('location:./Error/ErrorRegister.php');
+}
 }

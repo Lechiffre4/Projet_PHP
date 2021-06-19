@@ -1,0 +1,57 @@
+body{
+    background: #1F2421;
+}
+
+#container{
+    width:400px;
+    margin:0 auto;
+    margin-top:10%;
+}
+
+.Title{
+    display: flex;
+    margin:0px;
+    margin-top: 50px;
+    justify-content: center;
+} 
+
+h2{
+    display:flex;
+    text-align: center;
+}
+
+form {
+    width: 100%;
+    padding: 30px;
+    border: 1px solid #f1f1f1;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+/* Set a style for all buttons */
+.button{
+    display: flex;
+    background-color: #216869;
+    color: white;
+    padding: 15px ; 
+    margin-top: 50px; 
+    margin-left: 100px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    border-radius: 20px;
+    justify-content: center;
+    
+}
+.button:hover {
+    background-color: #f1f1f1;
+    color: #53af57;
+    border: solid#216869;
+    border-radius: 20px;
+}
+
+.Title{
+    display:flex;
+    
+    justify-content: center;
+}

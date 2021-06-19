@@ -27,6 +27,7 @@ function login($username,$password,$bdd){
     else 
     {
     echo "Pseudo ou mot de passe incorrect";
+    header('location:./Error/Errorlogin.php');
     }
 }
 
