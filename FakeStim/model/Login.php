@@ -18,10 +18,11 @@ function login($username,$password,$bdd){
     $_SESSION['id'] = $result['id'];
     $_SESSION['pseudo'] = $result['username'];
     $_SESSION['email'] = $result['email'];
+    $_SESSION['password'] = $result['password'];
 
     
    
-    header('location:./Profil.php');
+    header('location:./Shop.php');
     } 
 
     else 

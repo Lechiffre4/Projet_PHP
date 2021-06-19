@@ -27,7 +27,7 @@ if ($password == $passwordRedo){
             ':email'=> htmlspecialchars($email),
             ':password' => password_hash($password,PASSWORD_BCRYPT)
             )); //Envois du pseudo et mdp à la BDD
-           
+            header('location:./index.php');   
     }
 
 } 
