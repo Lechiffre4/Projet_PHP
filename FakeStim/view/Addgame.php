@@ -29,7 +29,7 @@ session_start();
                 <label><b>link</b></label>
                 <input type="url" placeholder="link to the game" name="link" required>
 
-                <input type="submit" id='submit' value='CREATE' >
+                <input type="submit" id='submit' value='ADD' >
                
             </form>
         </div>

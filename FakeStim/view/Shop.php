@@ -24,7 +24,6 @@ if (!isset($_SESSION['pseudo'])){
         </div>
         <table>
             
-
         </table>
 
 
