@@ -103,3 +103,14 @@ body{
     border: solid#216869;
     border-radius: 20px;
 }
+
+nav{
+    display: flex;
+    flex-direction:row;
+}
+
+.list{
+    margin-left: 80px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}

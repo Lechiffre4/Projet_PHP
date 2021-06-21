@@ -26,6 +26,7 @@ if (!isset($_SESSION['pseudo'])){
         <div id="container">
         
         <img class="Pics" src="./assets/Images/image0.png" alt="Pics">
+        <a href='./Shop.php' class="button">Go to Shop</a>
         <!-- <button class="button" href="/">Edit Pic</button> -->
         <h2 class="Username">Username</h2>
         <p class="informations"><?php echo $_SESSION['pseudo']; ?></p>
@@ -37,7 +38,7 @@ if (!isset($_SESSION['pseudo'])){
         <p class="informations"><?php echo $_SESSION['password']; ?> </p>
 
         <a href='./disconnect.php' class="button">Disconnect</a>
-        <a href='./Shop.php' class="button">Go to Shop</a>
+        
         
              
             

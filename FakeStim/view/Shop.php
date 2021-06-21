@@ -15,16 +15,21 @@ if (!isset($_SESSION['pseudo'])){
         <link rel="stylesheet" href="./assets/stylesShop.css">
     </head>
     <body>
-        <div>
+        <nav>
             <a class="profilebutton" href='Profil.php'>Profile</a>
             <a class="Addgame" href='AddGame.php'>Add a Game</a>
-        </div>
+        </nav>
         <div id="container">
          <h1 class="Title">Welcome to FakeStim</h1>
         </div>
-        <table>
+        <ul>
+        <?php foreach($game as $jeu){ ?>
+            <li class="list"><?php echo $jeu["name"] ?></li>
+
+        
+        <?php } ?>
             
-        </table>
+        </ul>
 
 
     </body>
