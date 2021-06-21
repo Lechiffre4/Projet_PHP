@@ -18,20 +18,13 @@ if (!isset($_SESSION['pseudo'])){
         <nav>
             <a class="profilebutton" href='Profil.php'>Profile</a>
             <a class="Addgame" href='AddGame.php'>Add a Game</a>
-            <a class="Addgame" href='SearchGame.php'>Search a game</a>
+            <a class="Addgame" href='Shop.php'>Go to shop</a>
         </nav>
         <div id="container">
-         <h1 class="Title">Welcome to FakeStim</h1>
+         <h1 class="Title">Search by Name</h1>
         </div>
-        <form method="post" action="./Shop.php">
-            <h4 class="select">Choose a category</h4>
-            <select class="select" name='category'>
-                <option value="All">All</option>
-                <option value="Aventure">Aventure</option>
-                <option value="BattleRoyale">BattleRoyale</option>
-                <option value="Action">Action</option>
-                <option value="Enigme">Enigme</option>
-            </select>
+        <form method="post" action="./SearchGame.php">
+            <input type='text' placeholder='search a game' name='search'>
             <input type="submit" id='submit' value='SEARCH' >
         </form>
         <ul>
