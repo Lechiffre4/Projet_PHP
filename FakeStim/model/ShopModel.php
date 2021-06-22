@@ -54,3 +54,8 @@ function GetInfos($bdd, $id){
 	return $result[0];
 }
 
+function Suppr($bdd,$id){
+	$reqDel = $bdd->prepare('DELETE FROM games WHERE id= :id');
+	$reqDel->execute(array(':id'=>htmlspecialchars($id)));
+}
+
