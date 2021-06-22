@@ -10,4 +10,9 @@ $Game=GetInfos($bdd, $id);
 
 
  //include view
- include __DIR__ . '/../view/Game.php';
+if($Game===null){
+include __DIR__ . '/../view/404.php';
+}
+else{
+include __DIR__ . '/../view/Game.php';
+}
