@@ -7,7 +7,7 @@
     <body>
         <div id="container">
             <form>
-            <h1 class="Title">Error :</h1>
+            <h1 class="Title"><u>Error :</u></h1>
             <h2>les mots de passes ne sont pas identiques</h2>
             <a class="button" href="/../Create.php">Go back</a>
             <form>
