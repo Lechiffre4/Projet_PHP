@@ -35,7 +35,7 @@ if (!isset($_SESSION['pseudo'])){
             <?php if($_SESSION['pseudo'] == $Game['creator'])
             { 
                 $magouille=$Game['id'];
-                echo "<a href='./DeleteGame.php?id=$magouille ' class='button'>DELETE</a>"; 
+                echo "<a href='./DeleteGame.php?id=$magouille' class='button'>DELETE</a>"; 
             }
             ?>
 
