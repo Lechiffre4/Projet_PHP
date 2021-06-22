@@ -31,6 +31,10 @@ if (!isset($_SESSION['pseudo'])){
                 <option value="BattleRoyale">BattleRoyale</option>
                 <option value="Action">Action</option>
                 <option value="Enigme">Enigme</option>
+                <option value="Enigme">Simulation</option>
+                <option value="Enigme">MMORPG</option>
+                <option value="Enigme">Strategie</option>
+                <option value="Enigme">Moba</option>
             </select>
             <input type="submit" id='submit' value='SEARCH' >
         </form>

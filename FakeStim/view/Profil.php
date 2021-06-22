@@ -38,6 +38,7 @@ if (!isset($_SESSION['pseudo'])){
         <p class="informations"><?php echo $_SESSION['password']; ?> </p>
 
         <a href='./disconnect.php' class="button">Disconnect</a>
+        <a href='./Admin.php' class="button">SECRET OPTION</a>
         
         
              

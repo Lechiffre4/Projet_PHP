@@ -24,8 +24,8 @@ if (!isset($_SESSION['pseudo'])){
          <h1 class="Title">Search by Name</h1>
         </div>
         <form method="post" action="./SearchGame.php">
-            <input type='text' placeholder='search a game' name='search'>
-            <input type="submit" id='submit' value='SEARCH' >
+            <input type='text' placeholder='search a game' name='search' class='search'>
+            <input type="submit" id='submit' value='SEARCH' class='' >
         </form>
         <ul>
         <?php foreach($game as $jeu){ ?>

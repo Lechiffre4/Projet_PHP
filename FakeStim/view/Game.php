@@ -31,6 +31,7 @@ if (!isset($_SESSION['pseudo'])){
             <p>category : <?php echo $Game['category']?></p>
             <p>creator : <?php echo $Game['creator']?></p>
             <a href="<?php echo $Game['link'];?>" class='button' >Link to the game</a>
+            <a href="./shop.php" class='button'>Back to shop</a>
 
              
             

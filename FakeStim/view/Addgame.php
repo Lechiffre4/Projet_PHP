@@ -26,11 +26,16 @@ session_start();
                 <label><b>description</b></label>
                 <input type="text" placeholder="description" name="description" required>
 
+                <label><b>category</b></label>
                 <select class="select" name="category">
                     <option value="Aventure">Aventure</option>
                     <option value="Battleroyale">BattleRoyale</option>
                     <option value="Action">Action</option>
                     <option value="Enigme">Enigme</option>
+                    <option value="Enigme">Simulation</option>
+                    <option value="Enigme">MMORPG</option>
+                    <option value="Enigme">Strategie</option>
+                    <option value="Enigme">Moba</option>
                 </select>
 
                 <label><b>link</b></label>
